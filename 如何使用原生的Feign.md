@@ -1,6 +1,6 @@
 # 什么是Feign
 
-Feign 是由 Netflix 团队开发的一款基于 Java 实现的 HTTP client，借鉴了 Retrofi、 JAXRS-2.0、WebSocket 等类库。通过 Feign，我们可以像调用方法一样非常简单地访问 HTTP API。这篇博客将介绍如何使用原生的 Feign，注意，是原生的，不是经过 Spring 层层封装的 Feign。
+Feign 是由 Netflix 团队开发的一款基于 Java 实现的 HTTP client，借鉴了 Retrofit、 JAXRS-2.0、WebSocket 等类库。通过 Feign，我们可以像调用方法一样非常简单地访问 HTTP API。这篇博客将介绍如何使用原生的 Feign，注意，是原生的，不是经过 Spring 层层封装的 Feign。
 
 补充一下，在 maven 仓库中搜索 feign，我们会看到两种 Feign： OpenFeign Feign 和 Netflix Feign。它们有什么区别呢？简单地说，OpenFeign Feign 的前身就是 Netflix Feign，因为 Netflix Feign 从 2016 年开始就不维护了，所以建议还是使用 OpenFeign Feign。
 
@@ -24,7 +24,7 @@ Feign 是由 Netflix 团队开发的一款基于 Java 实现的 HTTP client，�
 
 ## 为什么要使用Feign
 
-HTTP client 的类库还有很多，例如 Retrofi、JDK 自带的 HttpURLConnection、Apache HttpClient、OkHttp、Spring 的 RestTemplate，等等。我很少推荐说要使用哪种具体的类库，如果真的要推荐 Feign 的话，主要是由于它优秀的扩展性（不是一般的优秀，后面的使用例子就可以看到）。
+HTTP client 的类库还有很多，例如 Retrofit、JDK 自带的 HttpURLConnection、Apache HttpClient、OkHttp、Spring 的 RestTemplate，等等。我很少推荐说要使用哪种具体的类库，如果真的要推荐 Feign 的话，主要是由于它优秀的扩展性（不是一般的优秀，后面的使用例子就可以看到）。
 
 # 如何使用Feign
 
